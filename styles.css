@@ -141,7 +141,8 @@ button {
 
 .btn {
   display: block;
-  padding: 0.8em 1.4em;
+  border-radius: 2em;
+  padding: 0.8em 1.5em;
   font-weight: 500;
   font-size: 0.9rem;
   text-transform: lowercase;
@@ -410,4 +411,54 @@ main {
   .scroll-container {
     display: none;
   }
+}
+
+#links {
+  color: var(--clr-primary);
+  padding: 0 0 0.3em 0;
+  position: relative;
+}
+
+#links:hover {
+  color: var(--clr-primary);
+}
+
+#links::before {
+  content: "";
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--clr-primary);
+  transition: width 0.2s ease-in;
+}
+
+#links:hover::before,
+#links:focus::before {
+  width: 100%;
+}
+
+.btncustom {
+  display: block;
+  border-radius: 2em;
+  padding: 0.8em 1.5em;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btncustom:hover {
+  text-transform: initial;
+  background-color: var(--clr-bg-alt);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 0;
+}
+
+.btncustom::after {
+  text-transform: initial;
+  background-color: var(--clr-bg-primary);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 0;
 }
