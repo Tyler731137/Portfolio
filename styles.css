@@ -292,6 +292,7 @@ main {
 
 .project {
   padding: 2em;
+  border-radius: 2.5em;
   margin: 0 auto;
   text-align: center;
   box-shadow: var(--shadow);
@@ -441,7 +442,7 @@ main {
 
 .btncustom {
   display: block;
-  border-radius: 2em;
+  border-radius: 10em;
   padding: 0.8em 1.5em;
   font-weight: 500;
   font-size: 0.9rem;
